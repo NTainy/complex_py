@@ -185,6 +185,9 @@ class Complex:
         """
         return math.atan2(self.imag, self.real)
 
+    def to_trig(self) -> tuple:
+        return self.mag(), self.arg()
+
     def __abs__(self):
         return self.mag()
 
