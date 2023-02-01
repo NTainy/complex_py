@@ -10,18 +10,18 @@ corresponding part of the number will be set to 0 by default.
 * ```Complex('x+yi')``` creates ```z = x + yi```, too. This
 method auto-parses strings to numbers.
 
-### Getters, fields and basic methods
+### Methods
 In following parts will be used assumption that numbers
 ```z, z1, z2, etc.``` are instances of ```Complex```.
-##### Re & Im
+#### Re & Im
 * ```z.re(), z.real(), z.re``` return real part of the number
 * ```z.im(), z.imag(), z.im``` return imaginary part of the number.
-##### Trigonometry
+#### Trigonometry
 * ```abs(z) and z.mag()``` returns the magnitude (== absolute value)
 of the complex number ```z```.
 * ```z.arg()``` returns the argument of the complex number in `radians`.
 * `z.to_trig()` returns `tuple (mag, arg)`
-##### Conjugate & negative complex numbers
+#### Conjugate & negative complex numbers
 * `z -> ~z`. `z` and `~z` are conjugate numbers. `~~z == z`.
 * Unary operator `-` returns `3-2i -> -3+2i`, `z -> -z`.
 #### Operations
